@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Funteckna</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header
+      id="header"
+      class="flex bg-white w-full justify-between sticky top-0 items-center drop-shadow py-4 px-10"
+    >
+      <a href="#" class="flex items-center text-2xl gap-3">
+        <div>Funteckna</div>
+        <img src="images/notizblock.png" alt="logo" class="w-8 h-auto"
+      /></a>
+      <div class="flex items-center gap-6">
+        <nav class="flex gap-6">
+          <a href="#features">Funktionen</a>
+          <a href="#pricing">Preise</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+        <button>Jetzt testen</button>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="flex flex-col items-center">
+      <!--HERO-->
+      <section class="pt-0 text-center w-full flex flex-col gap-3 bg-white">
+        <p class="pt-8 pb-8 text-xl citation bg-blue-100">
+          "Feder und Papier entzünden mehr Feuer als alle Streichhölzer der
+          Welt." <br />
+          - Malcom Stevenson Forbes
+        </p>
+        <p class="text-xl">
+          Skizzieren, Aufschreiben & Anmerken <br />
+          im Team sowie individuell!
+        </p>
+        <p class="text-2xl">Jetzt herunterladen</p>
+        <div class="flex gap-6 justify-center items-end">
+          <a href=""
+            ><img class="w-9" src="images/neoapple.png" alt="App Store"
+          /></a>
+          <a href=""
+            ><img class="w-8" src="images/google-play.png" alt="Google Play"
+          /></a>
+        </div>
+      </section>
+
+      <!--FEATURES-->
+      <section id="features" class="w-full px-60 py-10 pattern">
+        <div class="bg-white px-8 pb-8">
+          <h2 class="text-center">Funktionen</h2>
+          <div class="features">
+            <p>
+              Erstelle <b>schnelle</b> und übersichtliche <b>Notizbücher</b>
+            </p>
+            <img class="w-5" src="images/done.png" alt="yes" />
+          </div>
+          <div class="features">
+            <p><b>Cloud-Sync</b> - verliere keine Notizen</p>
+            <img class="w-5" src="images/done.png" alt="yes" />
+          </div>
+          <div class="features">
+            <div><b>Intelligente Suche</b> (auch bei Handgeschriebenen)</div>
+            <img class="w-5" src="images/done.png" alt="yes" />
+          </div>
+          <div class="features">
+            <div><b>To-Do</b> Listen <b>Modus</b></div>
+            <img class="w-5" src="images/done.png" alt="yes" />
+          </div>
+          <div class="features">
+            <div><b>Sicher & privat</b>: deine Daten gehören dir</div>
+            <img class="w-5" src="images/done.png" alt="yes" />
+          </div>
+        </div>
+      </section>
+
+      <!--Pricing-->
+      <section class="w-full px-60 bg-white" id="pricing">
+        <h2 class="text-center">Preise</h2>
+        <div class="flex justify-center gap-10 text-center">
+          <div class="flex flex-col gap-2 cards">
+            <p>nur
+            <div class="font-bold">4,99€<br>/Monat</div>
+                (monatliche <br />
+                Abrechnung)
+            </p>
+            <button>Jetzt kaufen</button>
+          </div>
+          
+          <div class="flex flex-col gap-2 cards">
+            <p>nur
+              <div class="font-bold">1,99€<br>/Monat</div>
+                  (jährliche <br />
+                  Abrechnung)
+            </p>
+            <button>Jetzt kaufen</button>
+          </div>
+        </div>
+        
+
+      </section>
+
+      <!--CONTACT-->
+      <section id="contact" class="w-full pl-60 pr-60">
+        <h2 class="text-center">Kontakt</h2>
+        <form action="#" class="flex flex-col gap-2 w-full">
+          <label for="name">Name</label>
+          <input type="text" name="Name" id="name" required />
+          <label for="email">E-Mail-Adresse</label>
+          <input type="email" name="Email" id="email" required />
+          <label for="message">Was möchten Sie uns mitteilen?</label>
+          <textarea name="Nachricht" id="message" cols="30" rows="6"></textarea>
+          <div class="flex items-left gap-1.5">
+            <input class="w-5" type="checkbox" id="checkbox" required />
+            <label for="checkbox">Ich habe die <a class="underline" href="/src/datenschutz.html">Datenschutzerklärung</a> gelesen und akzeptiere diese.</label>
+            
+          </div>
+          
+          <div class="text-center">
+            <button>absenden</button>
+          </div>
+        </form>
+      </section>
+
+      <!--END SECTION-->
+      <section class="text-center">
+        <p class="text-xl font-semibold">
+          Bring noch heute Ordnung <br />
+          in dein Zettelchaos!
+        </p>
+        <div class="flex gap-6 justify-center pt-4 items-end">
+          <a href=""
+            ><img class="w-9" src="images/neoapple.png" alt="App Store"
+          /></a>
+          <a href=""
+            ><img class="w-8" src="images/google-play.png" alt="Google Play"
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <section class="flex pb-10 px-60 gap-4 justify-between text-center footer">
+      <div class="flex flex-col">
+        <a href="/src/about_us.html" class="text-white hover:text-blue-200"
+          >Über uns</a
+        >
+        <a href="/src/impressum.html" class="text-white hover:text-blue-200">
+          Impressum</a
+        >
+      </div>
+      <div class="flex flex-col">
+        <a href="/src/datenschutz.html" class="text-white hover:text-blue-200"
+          >Datenschutz</a
+        >
+        <a href="/src/lizenz.html" class="text-white hover:text-blue-200"
+          >Lizenzvereinbarung</a
+        >
+      </div>
+      <a
+        href="/src/barrierefreiheit.html"
+        class="text-white hover:text-blue-200"
+        >Barrierefreiheit</a
+      >
+    </section>
+    <!--
+    <section class="footer text-white text-center flex justify-center gap-0.5">
+      <p>Credits: Icons von </p>
+      <a
+        class="text-white hover:text-blue-200"
+        href="https://www.flaticon.com/de/"
+        title="Icons"
+        >adriansyah</a
+      <p>,</p>
+      <a
+        class="text-white hover:text-blue-200"
+        href="https://www.flaticon.com/de/"
+        title="Icons"
+        >Pixel perfect</a
+      >
+      <p>und</p>
+      <a
+        class="text-white hover:text-blue-200"
+        href="https://www.flaticon.com/de/"
+        title="Icons"
+        >Freepik - Flaticon</a
+      >
+    </section>-->
+  </body>
+</html>
