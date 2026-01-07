@@ -4,25 +4,38 @@
 
 :root {
   --currentColor: rgb(0, 102, 255);
+  --primary: #5947e3;
+  --secondary: #c94a00;
+  --primaryLight: #b1a7ff;
+  --secondaryLight: #ffc19d;
+  --primaryContrast: #F5F3FF;
+  --secondaryContrast: #FFD1A0;
 }
 
 a {
   font-weight: 500;
-  color: black;
+  color: var(--primary);
 }
 a:hover {
-  color: var(--currentColor);
+  color: var(--secondary);
 }
 
 body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: black;
+  }
+
 h1 {
   font-size: xx-large;
   font-weight: bold;
   padding: 0.7em;
   padding-left: 0;
+  color: var(--primary);
 }
 
 .citation {
@@ -35,6 +48,12 @@ h2 {
   font-size: x-large;
   font-weight: bold;
   padding-left: 0;
+
+  color: var(--primary);
+  border-bottom: 2px solid var(--secondaryLight);
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 button {
@@ -44,13 +63,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: rgb(0, 102, 255);
+  background-color: var(--primary);
   cursor: pointer;
   transition: border-color 0.25s;
   color: white;
 }
 button:hover {
-  background-color: lightskyblue;
+  background-color: var(--secondaryLight);
   color: black;
 }
 button:focus,
@@ -73,7 +92,7 @@ section {
 }
 
 .footer {
-  background-color: var(--currentColor);
+  background-color: var(--primary);
   bottom: 0;
 }
 
@@ -89,7 +108,7 @@ h3 {
 }
 
 .cards {
-  border: 2px solid var(--currentColor);
+  border: 2px solid var(--secondary);
   border-radius: 16px;
   padding: 2em;
 }
